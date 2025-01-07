@@ -1,2 +1,2 @@
-FROM 872599169723.dkr.ecr.ap-south-1.amazonaws.com/nginx
+FROM nginx:latest
 COPY blue /usr/share/nginx/html/blue
