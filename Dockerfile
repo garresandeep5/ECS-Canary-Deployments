@@ -1,2 +1,6 @@
 FROM nginx:latest
-COPY blue /usr/share/nginx/html/blue
+
+# Install the stress tool
+RUN apt-get update && apt-get install -y stress
+
+COPY blue /usr/share/nginx/html/green
